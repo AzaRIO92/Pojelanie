@@ -1,0 +1,103 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://www.google.ru/url?sa=i&url=https%3A%2F%2Fsotni.ru%2Ffon-mechet%2F&psig=AOvVaw37ouw5I4SPd2NWcbQnV0zg&ust=1723219606755000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCICi-bbj5YcDFQAAAAAdAAAAABAJ');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    text-align: center;
+}
+
+.button {
+    padding: 25px 40px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff5f5f;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #e04e4e;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+.rose {
+    position: absolute;
+    top: -100px;
+    width: 50px;
+    height: 50px;
+    background-image: url('https://www.pngall.com/wp-content/uploads/2016/04/Rose-PNG-Download-Image.png');
+    background-size: cover;
+    opacity: 0;
+    animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px) rotate(0deg);
+    }
+    10% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.button {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px; /* Установите размер кнопки */
+    height: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.smiley-image {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.button:hover .smiley-image {
+    transform: scale(1.1);
+}
