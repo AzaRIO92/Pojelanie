@@ -47,8 +47,8 @@ body, html {
 .rose {
     position: absolute;
     top: -100px;
-    width: 50px;
-    height: 50px;
+    width: 150px;
+    height: 150px;
     background-image: url('https://www.pngall.com/wp-content/uploads/2016/04/Rose-PNG-Download-Image.png');
     background-size: cover;
     opacity: 0;
@@ -78,8 +78,8 @@ body, html {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 100px; /* Установите размер кнопки */
-    height: 100px;
+    width: 150px; /* Установите размер кнопки */
+    height: 150px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
@@ -100,4 +100,20 @@ body, html {
 
 .button:hover .smiley-image {
     transform: scale(1.1);
+}
+
+
+.heart {
+    position: absolute;
+    top: -50px;
+    font-size: 2rem;
+    color: red;
+    animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
 }
